@@ -1,14 +1,37 @@
+'use client'
+
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Section from "@/components/Section";
 import Card from "@/components/Card";
 import Container from "@/components/Container";
+import ImageModal from "@/components/ImageModal";
 import { profile, sections } from "@/lib/data";
+import { useState } from "react";
 
 export default function Page() {
+  const [modalImages, setModalImages] = useState<string[] | null>(null)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  const openModal = (images: string[], index: number) => {
+    setModalImages(images)
+    setCurrentImageIndex(index)
+  }
+
+  const closeModal = () => {
+    setModalImages(null)
+  }
+
   return (
     <main id="top">
       <Navbar />
+      {modalImages && (
+        <ImageModal
+          images={modalImages}
+          currentIndex={currentImageIndex}
+          onClose={closeModal}
+        />
+      )}
 
       {/* HERO */}
       <div className="py-16 sm:py-20">
@@ -107,11 +130,94 @@ export default function Page() {
         <div className="space-y-4">
           {sections.experience.items.map((e) => (
             <Card key={e.title} title={e.title} desc={e.period}>
-              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
-                {e.bullets.map((b) => (
-                  <li key={b}>{b}</li>
-                ))}
-              </ul>
+              <div className="grid gap-4 md:grid-cols-[1.5fr_1fr] md:items-start">
+                <div>
+                  <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                    {e.bullets.map((b) => (
+                      <li key={b}>{b}</li>
+                    ))}
+                  </ul>
+                  {e.link && (
+                    <div className="mt-4">
+                      <a
+                        className="text-sm font-medium underline underline-offset-4 hover:opacity-80"
+                        href={e.link.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {e.link.label}
+                      </a>
+                    </div>
+                  )}
+                </div>
+                
+                {e.images && (
+                  <div className="grid grid-cols-2 gap-2">
+                    {e.images.map((img, index) => (
+                      <div 
+                        key={img} 
+                        className="rounded-lg overflow-hidden border border-zinc-200/50 dark:border-zinc-800/50 cursor-pointer hover:scale-105 transition-transform duration-200"
+                        onClick={() => openModal(e.images!, index)}
+                      >
+                        <img
+                          src={img}
+                          alt={`${e.title} - Image ${index + 1}`}
+                          className="w-full h-24 object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* TRAINING */}
+      <Section id="training" title={sections.training.title}>
+        <div className="space-y-4">
+          {sections.training.items.map((t) => (
+            <Card key={t.title} title={t.title} desc={t.period}>
+              <div className="grid gap-4 md:grid-cols-[1.5fr_1fr] md:items-start">
+                <div>
+                  <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-700 dark:text-zinc-300">
+                    {t.bullets.map((b) => (
+                      <li key={b}>{b}</li>
+                    ))}
+                  </ul>
+                  {t.link && (
+                    <div className="mt-4">
+                      <a
+                        className="text-sm font-medium underline underline-offset-4 hover:opacity-80"
+                        href={t.link.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {t.link.label}
+                      </a>
+                    </div>
+                  )}
+                </div>
+                
+                {t.images && (
+                  <div className="grid grid-cols-2 gap-2">
+                    {t.images.map((img, index) => (
+                      <div 
+                        key={img} 
+                        className="rounded-lg overflow-hidden border border-zinc-200/50 dark:border-zinc-800/50 cursor-pointer hover:scale-105 transition-transform duration-200"
+                        onClick={() => openModal(t.images!, index)}
+                      >
+                        <img
+                          src={img}
+                          alt={`${t.title} - Image ${index + 1}`}
+                          className="w-full h-24 object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </Card>
           ))}
         </div>
@@ -122,6 +228,15 @@ export default function Page() {
         <div className="grid gap-4 md:grid-cols-2">
           {sections.speaking.items.map((s) => (
             <Card key={s.title} title={s.title} desc={s.desc}>
+              {s.image && (
+                <div className="mt-4 rounded-lg overflow-hidden border border-zinc-200/50 dark:border-zinc-800/50">
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    className="w-full h-48 object-cover"
+                  />
+                </div>
+              )}
               <div className="mt-4">
                 <a
                   className="text-sm font-medium underline underline-offset-4 hover:opacity-80"

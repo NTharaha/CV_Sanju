@@ -60,6 +60,65 @@ export const sections = {
           "Contributed to technical knowledge-sharing and training across teams.",
         ],
       },
+      {
+        title: "China Visit — Kin Long Headquarters (2024)",
+        period: "International Collaboration",
+        bullets: [
+          "Engaged in professional development and collaboration initiatives.",
+          "Explored innovative façade solutions and product advancements.",
+          "Strengthened international partnerships and technical coordination.",
+        ],
+        images: [
+          "/images/china-visit2024/C1.png",
+          "/images/china-visit2024/C2.png",
+          "/images/china-visit2024/C3.png",
+        ],
+        link: {
+          url: "https://www.linkedin.com/posts/chansithan-balasubramaniyam-1b14a317a_professionaldevelopment-collaboration-innovation-activity-7250522596138459139-BSJy?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlU3CoBBeg1n5TgnvP-rK3h_eo31QD4arg",
+          label: "View 2024 China Visit Highlights"
+        },
+      },
+      {
+        title: "China Visit — Kin Long Headquarters (2025)",
+        period: "International Collaboration",
+        bullets: [
+          "Visited Kin Long headquarters for technical collaboration and product training.",
+          "Engaged with R&D teams on façade system innovations and market requirements.",
+          "Strengthened cross-border technical coordination and support capabilities.",
+        ],
+        images: [
+          "/images/china-visit2025/C1.png",
+          "/images/china-visit2025/C2.png",
+          "/images/china-visit2025/C3.png",
+          "/images/china-visit2025/C4.png",
+        ],
+        link: {
+          url: "https://www.linkedin.com/posts/chansithan-balasubramaniyam-1b14a317a_kinlong-constructionhardware-chinavisit-activity-7352709703698694145-HNI9?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlU3CoBBeg1n5TgnvP-rK3h_eo31QD4arg",
+          label: "View China Visit Highlights"
+        },
+      },
+    ],
+  },
+  training: {
+    title: "Training Sessions",
+    items: [
+      {
+        title: "Kin Long & Alumex Technical Training",
+        period: "Sri Lanka",
+        bullets: [
+          "Conducted comprehensive technical training session for façade engineers and architects.",
+          "Covered advanced façade system solutions, installation techniques, and best practices.",
+          "Provided hands-on demonstrations and practical knowledge sharing.",
+        ],
+        images: [
+          "/images/Training-session/Alumex(1).png",
+          "/images/Training-session/Alumex(2).png",
+        ],
+        link: {
+          url: "https://www.linkedin.com/posts/chansithan-balasubramaniyam-1b14a317a_kinglong-alumex-trainingsession-activity-7341353073623146496-Dson?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlU3CoBBeg1n5TgnvP-rK3h_eo31QD4arg",
+          label: "View Training Session Highlights"
+        },
+      },
     ],
   },
   speaking: {
@@ -70,12 +129,14 @@ export const sections = {
         desc: "Featured speaker profile and event participation information.",
         linkLabel: "View speaker page",
         link: "https://zakworldoffacades.com/speaker/chansithan-balasubramaniyam/",
+        image: "/images/speaking-zak-profile.jpg",
       },
       {
         title: "Zak World of Façades India (Pune edition listing)",
         desc: "Event agenda listing including speaker appearance.",
         linkLabel: "View event page",
         link: "https://zakworldoffacades.com/event/180th-zwof-pune25/",
+        image: "/images/speaking-pune-event.jpg",
       },
     ],
   },
