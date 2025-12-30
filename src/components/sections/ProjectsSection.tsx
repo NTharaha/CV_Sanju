@@ -12,11 +12,6 @@ export default function ProjectsSection() {
           </h2>
           <div className="mt-4 h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full" />
         </div>
-        {sections.projects.note && (
-          <p className="mb-6 text-sm text-zinc-600 dark:text-zinc-400 italic">
-            {sections.projects.note}
-          </p>
-        )}
         <div className="grid gap-6 md:grid-cols-2">
           {sections.projects.items.map((project) => (
             <Card key={project.title} title={project.title}>
