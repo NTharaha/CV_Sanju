@@ -10,7 +10,7 @@ export default function Section({
   children: React.ReactNode;
 }) {
   return (
-    <section id={id} className="scroll-mt-24 py-16 sm:py-20 animate-fade-in-up">
+    <section id={id} className="scroll-mt-24 py-16 sm:py-10 animate-fade-in-up">
       <Container>
         <div className="mb-10">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl gradient-text">

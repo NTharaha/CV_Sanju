@@ -5,6 +5,7 @@ const nav = [
   { id: "about", label: "About" },
   { id: "expertise", label: "Expertise" },
   { id: "experience", label: "Experience" },
+  { id: "skills", label: "Skills" },
   { id: "training", label: "Training" },
   { id: "speaking", label: "Speaking" },
   { id: "projects", label: "Highlights" },

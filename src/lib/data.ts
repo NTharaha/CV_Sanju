@@ -52,15 +52,73 @@ export const sections = {
     title: "Experience",
     items: [
       {
-        title: "Kin Long — Techno-Commercial Manager",
-        period: "India / Sri Lanka / Maldives",
+        title: "Technical Manager - Kin Long",
+        period: "September 2025 - Present",
         bullets: [
-          "Supported façade projects with technical-commercial solutioning and execution coordination.",
-          "Worked with stakeholders to align specifications, detailing, and on-site implementation.",
-          "Contributed to technical knowledge-sharing and training across teams.",
+          "Leading technical operations and façade project management across India, Sri Lanka, and Maldives.",
+          "Overseeing technical-commercial solutioning, execution coordination, and team leadership.",
+          "Driving innovation in façade systems and providing strategic technical guidance to stakeholders.",
         ],
       },
       {
+        title: "Design Engineer - Kin Long",
+        period: "2022 - 2025",
+        bullets: [
+          "Developed façade design solutions and technical specifications for complex projects.",
+          "Collaborated with project teams on detailing, implementation, and quality assurance.",
+          "Contributed to technical knowledge-sharing and training programs within the organization.",
+        ],
+      },
+      {
+        title: "Internship - Sri Lanka Harbour",
+        period: "2020 (6 months)",
+        bullets: [
+          "Gained foundational experience in engineering operations and project coordination.",
+          "Assisted with technical documentation and site assessment activities.",
+          "Developed understanding of infrastructure projects and stakeholder coordination.",
+        ],
+      },
+    ],
+  },
+  training: {
+    title: "Training Sessions & Client Visit",
+    items: [
+      {
+        title: "Kin Long & Alumex Technical Training",
+        period: "Sri Lanka",
+        bullets: [
+          "Conducted comprehensive technical training session for façade engineers and architects.",
+          "Covered advanced façade system solutions, installation techniques, and best practices.",
+          "Provided hands-on demonstrations and practical knowledge sharing.",
+        ],
+        images: [
+          "/images/Training-session/Alumex(1).png",
+          "/images/Training-session/Alumex(2).png",
+        ],
+        link: {
+          url: "https://www.linkedin.com/posts/chansithan-balasubramaniyam-1b14a317a_kinglong-alumex-trainingsession-activity-7341353073623146496-Dson?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlU3CoBBeg1n5TgnvP-rK3h_eo31QD4arg",
+          label: "View Training Session Highlights"
+        },
+      },
+      {
+        title: "India Client Visit & Technical Consultation",
+        period: "Regional Project Support",
+        bullets: [
+          "Provided on-site technical consultation and façade solution assessments for Indian projects.",
+          "Collaborated with local teams on installation requirements and project coordination.",
+          "Strengthened client relationships and market presence in key Indian regions.",
+        ],
+      },
+      {
+        title: "Maldives Client Visit & Project Assessment",
+        period: "International Project Support",
+        bullets: [
+          "Conducted on-site technical assessment and solution consultation for major façade projects.",
+          "Provided expert guidance on façade system selection and installation requirements.",
+          "Strengthened client relationships and project coordination in the Maldives market.",
+        ],
+      },
+            {
         title: "China Visit — Kin Long Headquarters (2024)",
         period: "International Collaboration",
         bullets: [
@@ -99,25 +157,38 @@ export const sections = {
       },
     ],
   },
-  training: {
-    title: "Training Sessions",
+  skills: {
+    title: "Skills",
     items: [
       {
-        title: "Kin Long & Alumex Technical Training",
-        period: "Sri Lanka",
-        bullets: [
-          "Conducted comprehensive technical training session for façade engineers and architects.",
-          "Covered advanced façade system solutions, installation techniques, and best practices.",
-          "Provided hands-on demonstrations and practical knowledge sharing.",
+        category: "Technical Skills",
+        skills: [
+          "Façade Design & Engineering",
+          "Technical-Commercial Solutions",
+          "Structural Coordination",
+          "Site Execution Support",
+          "Product Training & Enablement",
         ],
-        images: [
-          "/images/Training-session/Alumex(1).png",
-          "/images/Training-session/Alumex(2).png",
+      },
+      {
+        category: "Software & Tools",
+        skills: [
+          "AutoCAD",
+          "Revit",
+          "Structural Analysis Software",
+          "Project Management Tools",
+          "Technical Documentation",
         ],
-        link: {
-          url: "https://www.linkedin.com/posts/chansithan-balasubramaniyam-1b14a317a_kinglong-alumex-trainingsession-activity-7341353073623146496-Dson?utm_source=share&utm_medium=member_desktop&rcm=ACoAADlU3CoBBeg1n5TgnvP-rK3h_eo31QD4arg",
-          label: "View Training Session Highlights"
-        },
+      },
+      {
+        category: "Professional Skills",
+        skills: [
+          "Client Relationship Management",
+          "Stakeholder Coordination",
+          "Technical Training",
+          "Project Management",
+          "Cross-border Collaboration",
+        ],
       },
     ],
   },
@@ -126,24 +197,38 @@ export const sections = {
     items: [
       {
         title: "Zak World of Façades — Speaker Profile",
-        desc: "Featured speaker profile and event participation information.",
+        desc: "Featured speaker profile and event participation information. Watch the façade presentation on YouTube.",
         linkLabel: "View speaker page",
         link: "https://zakworldoffacades.com/speaker/chansithan-balasubramaniyam/",
         image: "/images/speaking-zak-profile.jpg",
       },
       {
         title: "Zak World of Façades India (Pune edition listing)",
-        desc: "Event agenda listing including speaker appearance.",
+        desc: "Event agenda listing including speaker appearance. Façade presentation available on video.",
         linkLabel: "View event page",
         link: "https://zakworldoffacades.com/event/180th-zwof-pune25/",
         image: "/images/speaking-pune-event.jpg",
+      },
+      {
+        title: "Façade Presentation — YouTube Video",
+        desc: "Watch the complete façade presentation covering technical solutions and industry insights.",
+        linkLabel: "Watch on YouTube",
+        link: "https://youtu.be/2QOjNAUOulg?t=17259&si=7LyLfX_gl2x2-3zu",
       },
     ],
   },
   projects: {
     title: "Selected Work / Highlights",
-    note: "Replace these with your real case studies (project name, scope, measurable outcome). Keep it specific—vague project lists reduce credibility.",
     items: [
+      {
+        title: "Undergraduate Project - HND in Mechanical Engineering",
+        bullets: [
+          "Completed comprehensive mechanical engineering project as part of HND program in Colombo.",
+          "Applied theoretical knowledge to practical engineering challenges and solutions.",
+          "Demonstrated project management skills from conception to final presentation.",
+        ],
+        tags: ["Academic", "Mechanical Engineering", "HND", "Colombo"],
+      },
       {
         title: "Façade Solutioning Support (Case Study Placeholder)",
         bullets: [
@@ -164,6 +249,6 @@ export const sections = {
   },
   contact: {
     title: "Contact",
-    body: "For speaking, technical collaboration, or project support: connect via LinkedIn. If you want an email/contact form, add it only if you will respond quickly—otherwise it hurts trust.",
+    body: "For speaking, technical collaboration, or project support: connect via email or WhatsApp.",
   },
 };
